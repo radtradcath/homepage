@@ -13,11 +13,12 @@ h3 {
 
 body {
   background-color: aliceblue;
+  margin: 0;
 }
 
 .general-container {
-  width: 90%;
-  margin: 2em auto;
+  max-width: 90%;
+  margin: 2em auto 0 auto;
 }
 
 a {
@@ -81,7 +82,7 @@ main h2 {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 1.5em;
   border: 1px solid red;
 }
@@ -91,7 +92,7 @@ main h2 {
 }
 
 .project-first-line {
-  margin-top: .5em;
+  margin-top: 0.5em;
   display: grid;
   grid-template-columns: 1fr 2em 2em;
 }
@@ -115,3 +116,36 @@ main h2 {
   padding: 0 1em;
 }
 
+/* footer */
+
+footer {
+  background-color: aqua;
+  padding: 3.5em;
+  font-size: 1.5rem;
+  margin-top: 3em;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+footer img {
+  width: 50%;
+  object-fit: cover;
+}
+
+footer h2 {
+  margin-top: 0;
+}
+
+footer p {
+  margin-bottom: 1.5em;
+}
+
+.contact-icons {
+  font-size: 2em;
+}
+
+.contact-icons i {
+  padding-right: 1em;
+}
