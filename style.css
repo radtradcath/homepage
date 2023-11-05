@@ -49,7 +49,7 @@ header img {
 }
 
 .profile-pic-container h1 {
-  color: white;
+  color: rgb(76, 0, 255);
   border: 1px solid yellowgreen;
   position: absolute;
   bottom: 5%;
@@ -88,6 +88,7 @@ main h2 {
 }
 
 .card {
+  
   border: 1px solid brown;
 }
 
@@ -148,4 +149,37 @@ footer p {
 
 .contact-icons i {
   padding-right: 1em;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    display: block;
+  }
+
+  .profile-pic-container {
+    width: 60%;
+    float: left;
+    margin-right: 1em;
+    position: relative;
+  }
+
+  .about-container {
+    background-color: aliceblue;
+    width: fit-content;
+    margin-left: 2.5em; 
+    margin-top: 3.5em;  
+  }
+
+  .profile-pic-container h1 {
+    bottom: unset;
+    top: 3%;
+    right: -55%;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    
+  }
 }
